@@ -58,8 +58,8 @@ export default function Cache() {
         {data && (
           <div className="row">
             <div className="col-md-6">
-              <h2>Title</h2>
-              <p>{data.name}</p>
+              <h2>{data.title ? "Title" : "Name"}</h2>
+              <p>{data.title || data.name}</p>
             </div>
             <div className="col-md-6">
               <h2>Body</h2>
